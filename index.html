@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michał Szustkiewicz - geograf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/tableContainer.css" rel="stylesheet">
+    <link href="css/comeBack.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <nav>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#naglowek">Home</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#o-mnie">O mnie</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#inne-zainteresowania">Inne zainteresowania</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#kurs">Kurs frontendu</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <header id="naglowek" class="section section--centered">
+            <h1 class="section__header js-section__header">Michał Szustkiewicz</h1>
+            <p><button class="section__button js-changeBackgroundButton">Zmień tło nagłówka</button></p>
+            <img class="section__image" width="300" height="250" src="images/Michal.jpg" alt="Michał Szustkiewicz">
+        </header>
+
+        <section id="o-mnie" class="section">
+            <h2 class="section__subHeader">Krótkie informacje o mnie</h2>
+            <p class="section__paragraph">Mam 27 lat. Urodziłem się i wychowałem w Warszawie, gdzie również odbyłem
+                studia na
+                <i>Wydziale Geografii i Studiów Regionalnych</i> UW. Obecnie staram się o pracę w <i>Biurze Prognoz
+                    Lotniczych Instytutu
+                    Meteorologii i Gospodarki Wodnej</i>. <br> Od najmłodszych lat <strong>moją wielką pasją jest
+                    pogoda</strong>, a w szczególności <b>burze</b>. Od 2 lat współpracuję ze stowarzyszeniem
+                <i>Polskich
+                    Łowców Burz</i>, z którymi jeżdżę wspólnie na emocjonujące pościgi za tymi gwałtownymi, <em>ale
+                    równocześnie</em> niesamowicie pięknymi zjawiskami.
+            </p>
+            <img class="section__image js-section__image" width="300" height="200" src="images/burza.jpg" alt="burza">
+            <p>
+                <button class="section__button section__button--nightStorm js-changeImageButton">Zobacz burzę
+                    nocą</button>
+            </p>
+        </section>
+
+        <section id="inne-zainteresowania" class="section">
+            <h2 class="section__subHeader">Inne zainteresowania</h2>
+            <p class="section__paragraph">W wolnych chwilach chętnie wsiadam na rower lub spaceruję. Bardzo lubię
+                również chodzić
+                po
+                górach, co pozwala mi pokonywać własne słabości i ograniczenia. W nagrodę za ciężki wysiłek dostaję
+                niezapomniane widoki. <br>
+                Interesuję się także sportem, zwłaszcza <b>piłką nożną</b>, <b>skokami narciarskimi</b> i
+                <b>tenisem</b>.
+                Często też grywam w <b>szachy</b>, a wieczorami lubię oglądać rozgrywki <b><i>snookera</i></b>.
+            </p>
+        </section>
+
+        <div class="tableContainer">
+            <table class="table">
+                <caption class="table__caption">Moi ulubieni sportowcy</caption>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="col">Sportowiec</th>
+                    <th class="table__cell table__cell--header" scope="col">Dyscyplina</th>
+                    <th class="table__cell table__cell--header" scope="col">Kraj</th>
+                    <th class="table__cell table__cell--header" scope="col">Wiek</th>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">Lionel Messi</th>
+                    <td class="table__cell">piłka nożna</td>
+                    <td class="table__cell">Argentyna</td>
+                    <td class="table__cell">35</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">Gregor Schlierenzauer</th>
+                    <td class="table__cell">skoki narciarskie</td>
+                    <td class="table__cell">Austria</td>
+                    <td class="table__cell">32</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">Rafael Nadal</th>
+                    <td class="table__cell">tenis ziemny</td>
+                    <td class="table__cell">Hiszpania</td>
+                    <td class="table__cell">36</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">Judd Trump</th>
+                    <td class="table__cell">snooker</td>
+                    <td class="table__cell">Anglia</td>
+                    <td class="table__cell">33</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">Jan-Krzysztof Duda</th>
+                    <td class="table__cell">szachy</td>
+                    <td class="table__cell">Polska</td>
+                    <td class="table__cell">24</td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="kurs" class="section">
+            <h2 class="section__subHeader">Kurs frontendu</h2>
+            <p class="section__paragraph">Aktualnie nie posiadam żadnego doświadczenia w programowaniu ani w ogóle w
+                branży IT.
+                Postanowiłem jednak
+                spróbować swoich sił i nauczyć się czegoś nowego. Po pierwszym miesiącu moje wrażenia są
+                <strong>bardzo pozytywne</strong> i wierzę, że będzie tak do samego końca. Pozdrawiam cały zespół
+                <i>YouCode</i>, a
+                wszystkim kursantom życzę miłej i owocnej nauki!
+            </p>
+        </section>
+    </main>
+
+    <p>
+        <a class="comeBack" href="#naglowek">Powrót na górę strony</a>
+    </p>
+
+    <footer class="footer">Copyright 2022 by Michał Szustkiewicz - all rights reserved.</footer>
+
+</body>
+
+</html>

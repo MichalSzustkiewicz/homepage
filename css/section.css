@@ -1,0 +1,66 @@
+.section {
+    padding: 20px 0;
+}
+
+.section--centered {
+    text-align: center;
+}
+
+.section__header {
+    color: hsl(39, 78%, 50%);
+    background-color: #eee;
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    font: bold 24px "Lato", sans-serif;
+    border: 2px ridge red;
+    border-radius: 30px;
+    box-shadow: 10px -5px 19px -4px #1F8BBA;
+    text-shadow: 1px 1px 25px hsl(39, 78%, 70%);
+}
+
+.greenBackground {
+    background-color: green;
+}
+
+.section__subHeader {
+    color: hsl(39, 78%, 50%);
+    margin-top: 0;
+}
+
+.section__paragraph {
+    text-shadow: 1px 1px 10px rgb(122, 120, 120);
+}
+
+.section__image {
+    border: 2px solid brown;
+    padding: 5px;
+    outline: 2px dashed orange;
+    outline-offset: -5px;
+    margin: auto;
+}
+
+.section__button {
+    font-family: "Lato", sans-serif;
+    box-shadow: 3px -3px 15px -4px #806c75;
+    padding: 10px;
+    margin: 5px 0 30px;
+    border: 2px ridge gray;
+    border-radius: 5px;
+    background-color: hsl(0, 17%, 90%);
+}
+
+.section__button--nightStorm {
+    font-size: 16px;
+    font-weight: bold;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.section__button:hover {
+    background-color: hsl(0, 17%, 88%);
+}
+
+.section__button:active {
+    background-color: hsl(0, 17%, 86%);
+}

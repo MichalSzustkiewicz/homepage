@@ -1,0 +1,8 @@
+.footer {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px 10px gray;
+    background-color: #8bb0bd;
+    padding: 15px
+}

@@ -1,0 +1,23 @@
+.comeBack {
+    color: hsl(219, 79%, 40%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.comeBack:visited {
+    color: hsl(219, 79%, 35%);
+}
+
+.comeBack:focus {
+    outline: 2px solid currentColor;
+}
+
+.comeBack:hover {
+    color: hsl(219, 79%, 45%);
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.comeBack:active {
+    color: hsl(219, 79%, 55%);
+}
