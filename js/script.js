@@ -1,21 +1,38 @@
-console.log("Pozdrawiam serdecznie wszystkich Polaków w kraju i za granicą!");
-
-let changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
-let header = document.querySelector(".js-section__header")
-let changeImageButton = document.querySelector(".js-changeImageButton");
-let image = document.querySelector(".js-section__image");
-
-changeBackgroundButton.addEventListener("click", () => {
-    header.classList.toggle("greenBackground");
-})
-
-changeImageButton.addEventListener("click", () => {
-    if (image.getAttribute("src") === "images/burza.jpg") {
-        image.setAttribute("src", "images/piorun.jpg");
-        changeImageButton.innerText = "Zobacz burzę za dnia";
+{
+    const welcome = () => {
+        console.log("Pozdrawiam serdecznie wszystkich Polaków w kraju i za granicą!");
     }
-    else {
-        image.setAttribute("src", "images/burza.jpg");
-        changeImageButton.innerText = "Zobacz burzę nocą";
-    }
-})
+
+    const toggleBackground = () => {
+        const header = document.querySelector(".js-section__header");
+        header.classList.toggle("section__header--greenBackground");
+    };
+
+    const toggleImage = (changeImageButton) => {
+        const image = document.querySelector(".js-section__image");
+        if (image.getAttribute("src") === "images/burza.jpg") {
+            image.setAttribute("src", "images/piorun.jpg");
+            changeImageButton.innerText = "Zobacz burzę za dnia";
+        }
+        else {
+            image.setAttribute("src", "images/burza.jpg");
+            changeImageButton.innerText = "Zobacz burzę nocą";
+        }
+    };
+
+    const init = () => {
+        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
+        const changeImageButton = document.querySelector(".js-changeImageButton");
+        changeBackgroundButton.addEventListener("click", toggleBackground);
+        changeImageButton.addEventListener("click", toggleImage);
+
+        welcome();
+    };
+
+    init();
+}
+
+
+
+
+
