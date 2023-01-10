@@ -5,7 +5,7 @@
 
     const toggleBackground = () => {
         const header = document.querySelector(".js-section__header");
-        header.classList.toggle("section__header--greenBackground");
+        header.classList.toggle("section__header--greyBackground");
     };
 
     const toggleImage = (changeImageButton) => {

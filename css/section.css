@@ -11,16 +11,16 @@
     background-color: #eee;
     max-width: 300px;
     padding: 20px;
-    margin: auto;
+    margin: 20px auto;
     font: bold 24px "Lato", sans-serif;
     border: 2px ridge red;
     border-radius: 30px;
-    box-shadow: 10px -5px 19px -4px #1F8BBA;
+    box-shadow: 1px -1px 20px 1px rgb(238, 180, 180);
     text-shadow: 1px 1px 25px hsl(39, 78%, 70%);
 }
 
-.section__header--greenBackground {
-    background-color: green;
+.section__header--greyBackground {
+    background-color: #ddd;
 }
 
 .section__subHeader {
@@ -30,6 +30,8 @@
 
 .section__paragraph {
     text-shadow: 1px 1px 10px rgb(122, 120, 120);
+    text-align: justify;
+    text-indent: 5%;
 }
 
 .section__image {
