@@ -8,8 +8,10 @@
         header.classList.toggle("section__header--greyBackground");
     };
 
-    const toggleImage = (changeImageButton) => {
+    const toggleImage = () => {
         const image = document.querySelector(".js-section__image");
+        const changeImageButton = document.querySelector(".js-changeImageButton");
+
         if (image.getAttribute("src") === "images/burza.jpg") {
             image.setAttribute("src", "images/piorun.jpg");
             changeImageButton.innerText = "Zobacz burzę za dnia";
